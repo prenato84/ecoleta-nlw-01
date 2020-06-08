@@ -4,12 +4,13 @@ class ItemsController {
   async index(request: Request, response: Response) {
     const items = await knex('items').select('*');
 
-    // Para Web trocar 192.168.0.6 por localhost
+    // Para que o mobile consiga se comunicar, é preciso trocar
+    // o localhost pelo endereço IP local da sua máquina
     const serializedItems = items.map((item) => {
       return {
         id: item.id,
         title: item.title,
-        image_url: `http://192.168.0.6:3333/uploads/${item.image}`,
+        image_url: `http://localhost:3333/uploads/${item.image}`,
       };
     });
 
