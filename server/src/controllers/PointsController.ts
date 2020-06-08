@@ -17,10 +17,12 @@ class PointsController {
       .distinct()
       .select('points.*');
 
+    // Para que o mobile consiga se comunicar, é preciso trocar
+    // o localhost pelo endereço IP local da sua máquina
     const serializedPoints = points.map((point) => {
       return {
         ...point,
-        image_url: `http://192.168.0.6:3333/uploads/${point.image}`,
+        image_url: `http://localhost:3333/uploads/${point.image}`,
       };
     });
     return response.json(serializedPoints);

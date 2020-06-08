@@ -102,6 +102,21 @@ O projeto foi desenvolvido utilizando as seguintes tecnologias:
   $ npm start
 ```
 
+:exclamation: **OBS:** para que o frontend mobile consiga se comunicar corretamente com o backend (server), é preciso substituir **localhost** pelo IP local de sua máquina nas duas controllers:
+
+1. Acesse a pasta **server/src/controllers**;
+2. Em **ItemsController.ts** e utilizando como exemplo o IP 192.168.0.10, altere a propriedade **image_url**:
+
+```javascript
+image_url: `http://192.168.0.10:3333/uploads/...`;
+```
+
+3. Em **PointsController.ts** e utilizando como exemplo o IP 192.168.0.10, altere a propriedade **image_url**:
+
+```javascript
+image_url: `http://192.168.0.10:3333/uploads/...`;
+```
+
 <a id="como-contribuir"></a>
 
 ## :recycle: Como contribuir
