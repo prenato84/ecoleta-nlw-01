@@ -26,9 +26,9 @@
 
 ## :bookmark: About
 
-O <strong>Ecoleta</strong> é uma aplicação Web e Mobile para ajudar pessoas a encontrarem pontos de coleta para reciclagem.
+<strong>Ecoleta</strong> is a Web and Mobile application to help people find collection points for recycling.
 
-Essa aplicação foi construída na trilha <strong>Booster</strong> da <strong>Next Level Week</strong> distribuída pela [Rocketseat](https://rocketseat.com.br/). A ideia de criar uma aplicação voltada ao meio ambiente surgiu da coincidência da data do curso e a data da <strong>semana do meio ambiente</strong>.
+This application was built on the <strong>Next Level Week Booster</strong> track distributed by [Rocketseat](https://rocketseat.com.br/). The idea of ​​creating an application focused on the environment arose from the coincidence of the course date and the date of the <strong>environment week</strong>.
 
 <a id="tecnologias-utilizadas"></a>
 
